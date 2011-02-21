@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Panamericana Chat Style</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script type="text/javascript">
+		var debug = false;
+	</script>
+</head>
+<body>
+	<div id="container">
+		<div id="conversation">
+			<div class="item typing invisible" id="typing">
+				<div class="container">
+					<div class="head">
+						<span class="sender"></span>
+					</div>
+				</div>
+			</div>
+<div class="item history" id="%itemId%">
+	<div class="container">
+		<div class="body"><a href="%daysToLoad%" class="history-ealier">%message%</a></div>
+	</div>
+</div>
+
+<div class="item history" id="%itemId%">
+	<div class="container">
+		<div class="body">%message%
+		<span class="history-more">%moreHistoryLinks%</span></div>
+	</div>
+</div>
+
+
+<div class="item message in %messageStatus%" id="%itemId%">
+	<div class="container">
+		
+		<div class="head">
+			<span class="sender"><span class="profile" data-sender="%senderScreenName%"></span><img src="%userIconPath%" class="avatar" alt="" data-sender="%senderScreenName%" /><a href="%senderLinkURL%">%sender%</a></span>
+			<span class="time">%time%</span>
+			
+			<button class="actions" title="%tooltipActions%"></button>
+			
+		</div>
+		
+		<div class="body">%message%</div>
+		
+		<div class="body">%message%</div>
+		
+		<div class="body">%message%</div>
+		
+		<div class="body">%message%</div>
+	</div>
+</div>
+
+<div class="item message out editable %messageStatus%" id="%itemId%">
+	<div class="container">
+		<div class="head">
+			<span class="sender"><img src="%userIconPath%" class="avatar" />%sender%</span>
+			<span class="time">%time%</span>
+			<button class="actions" title="%tooltipActions%"></button>
+		</div>
+		<div class="body">%message%</div>
+		<div class="body">%message%</div>
+		<div class="body">%message%</div>
+	</div>
+</div>
+
+<div class="item call end" id="%itemId%">
+	<div class="container">
+		<div class="head">
+			<span class="sender"><img src="%userIconPath%" class="avatar" /></span>
+			<span class="time">%time%</span>
+		</div>
+		<div class="body">%message%<span class="duration">%duration%</span></div>
+	</div>
+</div>
+
+<div class="item call start" id="%itemId%">
+	<div class="container">
+		<div class="head">
+			<span class="sender"><img src="%userIconPath%" class="avatar" /></span>
+			<span class="time">%time%</span>
+		</div>
+		<div class="body">%message%</div>
+	</div>
+</div>
+
+<div class="item emote" id="%itemId%">
+	<div class="container">
+		<div class="head">
+			<span class="sender"><span class="profile" data-sender="%senderScreenName%"></span><img src="%userIconPath%" class="avatar" alt="" data-sender="%senderScreenName%" /><a href="%senderLinkURL%"></a></span>
+			<span class="time">%time%</span>
+		</div>
+		<div class="body">%message%</div>
+	</div>
+</div>
+
+<div class="item transfer in" id="%itemId%">
+	<div class="container">
+		<div class="head">
+			<span class="sender"><span class="profile" data-sender="%senderScreenName%"></span><img src="%userIconPath%" class="avatar" alt="" data-sender="%senderScreenName%" /><a href="%senderLinkURL%">%sender%</a></span>
+			<span class="time %transferHeadStatus%">%time%</span>
+		</div>
+		<div class="body">
+			<div class="main instance %transferStatus%">
+				<img class="icon" src="%transferType%" />
+				<button class="pill accept"><span>%acceptTransfer%</span></button>
+				<button class="pill decline"><span>%declineTransfer%</span></button>
+				<button class="cancel" title="%tooltipCancel%"></button>
+				<button class="quicklook" title="%tooltipQuicklook%"></button>
+				<button class="reveal" title="%tooltipReveal%"></button>
+				<span class="name">%name%</span>
+				<span class="progressbar">
+					<span class="total"></span>
+					<span class="progress"></span>
+				</span>
+				<span class="size">%size%</span>
+			</div>
+			%subTransfers%
+		</div>
+	</div>
+</div>
+<div class="item typing" id="typing">
+	<div class="container">
+		<div class="head">
+			<span class="sender">%message%</span>
+		</div>
+	</div>
+</div>
+<div class="item transfer out" id="%itemId%">
+	<div class="container">
+		%transferHead%
+		<div class="body">
+			<div class="main instance %transferStatus%">
+				<img class="icon" src="%transferType%" />
+				<button class="cancel" title="%tooltipCancel%"></button>
+				<button class="quicklook" title="%tooltipQuicklook%"></button>
+				<button class="reveal" title="%tooltipReveal%"></button>
+				<span class="name">%name%</span>
+				<span class="progressbar">
+					<span class="total"></span>
+					<span class="progress %transferProgress%"></span>
+				</span>
+				<span class="size">%size%</span>
+			</div>
+			%subTransfers%
+		</div>
+	</div>
+</div>
+
+
+		</div>
+	</div>
+</body>
+</html>
