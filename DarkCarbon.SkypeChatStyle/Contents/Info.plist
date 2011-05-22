@@ -5,19 +5,19 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleGetInfoString</key>
-	<string>Panamericana Chat Style</string>
+	<string>DarkCarbon Chat Style</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.skype.skype.panamericana.style</string>
+	<string>com.hazisarashi.skypestyle.darkcarbon</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>CFBundleName</key>
-	<string>Panamericana</string>
+	<string>DarkCarbon</string>
 	<key>CFBundlePackageType</key>
 	<string>SKP1</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>DefaultFontFamily</key>
-	<string>Helvetica Neue Light</string>
+	<string>Hiragino Kaku Gothic Pro</string>
 	<key>DefaultFontSize</key>
 	<integer>11</integer>
 	<key>DisableCustomBackground</key>
